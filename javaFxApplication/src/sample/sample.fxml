@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="754.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="sample.Controller">
+    <children>
+        <TableView fx:id="table" layoutX="377.0" prefHeight="458.0" prefWidth="380.0">
+            <columns>
+                <TableColumn fx:id="SnoTable" prefWidth="41.0" text="Sno" />
+                <TableColumn fx:id="nameTable" minWidth="4.0" prefWidth="141.0" text="Name" />
+                <TableColumn fx:id="contactTable" prefWidth="106.0" text="Contact" />
+                <TableColumn fx:id="bucksTable" prefWidth="125.0" text="Bucks" />
+            </columns>
+        </TableView>
+        <Label layoutX="36.0" layoutY="50.0" prefHeight="16.0" prefWidth="64.0" />
+        <Label layoutX="29.0" layoutY="26.0" text="Name" textFill="#ebe5e5" />
+        <TextField fx:id="nametxt" layoutX="91.0" layoutY="21.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter Name" />
+        <Label layoutX="23.0" layoutY="73.0" text="Contact" textFill="#ebe5e5" />
+        <Label layoutX="23.0" layoutY="115.0" prefHeight="16.0" prefWidth="58.0" text="Bucks" textFill="#ebe5e5" />
+        <TextField fx:id="contacttxt" layoutX="91.0" layoutY="68.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter Contact Number" />
+        <TextField fx:id="buckstxt" layoutX="91.0" layoutY="110.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter Bucks" />
+        <Button fx:id="addButton" layoutX="103.0" layoutY="160.0" mnemonicParsing="false" onAction="#onClick" prefHeight="26.0" prefWidth="147.0" text="ADD Contact" />
+    </children>
+</AnchorPane>
